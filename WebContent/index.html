@@ -1,0 +1,869 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>JDA Focus 2016</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="css/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+<!-- Timeline CSS -->
+<link href="css/app/timeline.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/app/sb-admin-2.css" rel="stylesheet">
+
+<!-- Morris Charts CSS -->
+<link href="css/morrisjs/morris.css" rel="stylesheet">
+
+<!-- Material Charts CSS -->
+<link href="css/material-charts/material-charts.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+<link href="css/app/custom.css" rel="stylesheet">
+
+<!-- DataTables CSS -->
+<link
+	href="css/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css"
+	rel="stylesheet">
+
+<!-- DataTables Responsive CSS -->
+<link href="css/datatables-responsive/css/dataTables.responsive.css"
+	rel="stylesheet">
+<link href="css/lightbox/ekko-lightbox.min.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">JDA Focus 2016</a>
+			</div>
+			<!-- /.navbar-header -->
+
+			<ul class="nav navbar-top-links navbar-right">
+				<!-- /.dropdown -->
+				<!-- /.dropdown -->
+				<!-- /.dropdown -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+								Logout</a></li>
+					</ul> <!-- /.dropdown-user --></li>
+				<!-- /.dropdown -->
+			</ul>
+			<!-- /.navbar-top-links -->
+
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="sidebar-search">
+							<div class="input-group custom-search-form">
+								<input type="text" class="form-control" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div> <!-- /input-group -->
+						</li>
+						<li><a href="index.html"><i class="fa fa-dashboard fa-fw"></i>
+								Dashboard</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o fa-fw"></i>
+								Social<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="#"
+									onclick="javascript:expandWidgetBox('snew-twitter', true)">
+										Twitter</a></li>
+								<li><a href="#"
+									onclick="javascript:expandWidgetBox('snew-youtube', true)">Youtube</a></li>
+							</ul> <!-- /.nav-second-level --></li>
+						<li><a href="#"><i class="fa fa-newspaper-o fa-fw"></i>
+								News<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="#"
+									onclick="javascript:expandWidgetBox('snew-google-search', true)">
+										Google</a></li>
+								<!-- <li><a href="morris.html">Supply chain digest</a></li> -->
+							</ul> <!-- /.nav-second-level --></li>
+						<li><a href="#"><i class="fa  fa-calendar fa-fw"></i>
+								Events<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="#"
+									onclick="javascript:expandWidgetBox('nashvilledotcom', false)">
+										Nashville.com</a></li>
+								<li><a href="#"
+									onclick="javascript:expandWidgetBox('nashvillelifestylesdotcom', false)">NashvilleLifestyle.com</a></li>
+							</ul> <!-- /.nav-second-level --></li>
+						<li><a href="#"
+							onclick="javascript:expandWidgetBox('nashville-weather', true)"><i
+								class="fa fa-sun-o fa-fw"></i> Weather</a></li>
+
+					</ul>
+				</div>
+				<!-- /.sidebar-collapse -->
+			</div>
+			<!-- /.navbar-static-side -->
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="col-lg-12">
+					<div style="height: 20px;" />
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+
+				<div class="col-lg-6 dashboard-layout" draggable="true"
+					ondragstart="drag(event)" name="section-2"
+					id="nashvillelifestylesdotcom" ondrop="drop(event)"
+					ondragover="allowDrop(event)">
+					<div class="panel panel-default"
+						id="nashvillelifestylesdotcom-header">
+						<div class="panel-heading">
+							<i class="fa fa-calendar fa-fw"></i> Events from
+							NashvilleLifestyles.com
+							<div class="btn-group pull-right ">
+								<i class="fa fa-expand fa-fw expandIcon"
+									onclick="javascript:expandWidgetBox('nashvillelifestylesdotcom', false)"></i>
+								<i class="fa fa-compress fa-fw collapseIcon"
+									style="display: none" onclick="javascript:collapseWidgetBox()"></i>
+							</div>
+							<div class="pull-right">
+								<div class="btn-group" role="group" aria-label="...">
+									<button type="button"
+										id="nashvillelifestylesdotcom-bargraph-btn"
+										name="nashvillelifestylesdotcom-header-buttons"
+										class="btn btn-default btn-xs">Bar</button>
+									<button type="button"
+										id="nashvillelifestylesdotcom-piegraph-btn"
+										name="nashvillelifestylesdotcom-header-buttons"
+										class="btn btn-default btn-xs">Pie</button>
+									<button type="button"
+										id="nashvillelifestylesdotcom-grid-div-btn"
+										name="nashvillelifestylesdotcom-header-buttons"
+										class="btn btn-default btn-xs">Grid</button>
+								</div>
+
+							</div>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body" name="nashvillelifestylesdotcom-component"
+							id="nashvillelifestylesdotcom-bargraph"></div>
+						<div class="panel-body" name="nashvillelifestylesdotcom-component"
+							id="nashvillelifestylesdotcom-piegraph" style="display: none"></div>
+						<div class="panel-body" name="nashvillelifestylesdotcom-component"
+							id="nashvillelifestylesdotcom-grid-div"
+							style="display: none; overflow: auto;">
+
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover"
+									id="nashvillelifestylesdotcom-grid">
+									<thead>
+										<tr>
+											<th>Event</th>
+											<th>Place</th>
+											<th>Date</th>
+											<!-- <th>To time</th> -->
+											<th>Description</th>
+											<!-- <th>Category</th> -->
+										</tr>
+									</thead>
+									<tbody id="nashvillelifestylesdotcom-grid-tbody">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-6 dashboard-layout" draggable="true"
+					ondragstart="drag(event)" id="nashville-weather"
+					ondrop="drop(event)" ondragover="allowDrop(event)">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<i class="fa fa-sun-o fa-fw"></i> Weather
+							<div class="btn-group pull-right">
+								<i class="fa fa-expand fa-fw expandIcon"
+									onclick="javascript:expandWidgetBox('nashville-weather', true)"></i>
+								<i class="fa fa-compress fa-fw collapseIcon"
+									style="display: none" onclick="javascript:collapseWidgetBox()"></i>
+							</div>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<!-- start of weather widget -->
+							<div class="x_panel">
+								<div class="x_content">
+									<div class="row">
+										<div class="col-sm-12">
+											<div id="nashville-weather-firstDayTemp" class="temperature">
+												<b>Monday</b>, 07:30 AM <span>F</span> <span><b>C</b>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="weather-icon">
+												<span id="nashville-weather-firstDayWeatherIcon">
+													<canvas height="84" width="84" id="partly-cloudy-day"></canvas>
+												</span>
+
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="weather-text">
+												<h2>
+													<span id="nashville-weather-firstDayPlace">Texas</span> <br>
+													<i id="nashville-weather-firstDayIconText">Partly
+														Cloudy Day</i>
+												</h2>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="weather-text pull-right">
+											<h3 id="nashville-weather-firstDayDegrees" class="degrees">23</h3>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+
+
+									<div class="row weather-days"
+										id="nashville-weather-weatherDays">
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Mon</h2>
+												<h3 class="degrees">25</h3>
+												<span>
+													<canvas id="clear-day" width="32" height="32">
+															</canvas>
+
+												</span>
+												<h5>
+													15 <i>km/h</i>
+												</h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Tue</h2>
+												<h3 class="degrees">25</h3>
+												<canvas height="32" width="32" id="rain"></canvas>
+												<h5>
+													12 <i>km/h</i>
+												</h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Wed</h2>
+												<h3 class="degrees">27</h3>
+												<canvas height="32" width="32" id="snow"></canvas>
+												<h5>
+													14 <i>km/h</i>
+												</h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Thu</h2>
+												<h3 class="degrees">28</h3>
+												<canvas height="32" width="32" id="sleet"></canvas>
+												<h5>
+													15 <i>km/h</i>
+												</h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Fri</h2>
+												<h3 class="degrees">28</h3>
+												<canvas height="32" width="32" id="wind"></canvas>
+												<h5>
+													11 <i>km/h</i>
+												</h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Sat</h2>
+												<h3 class="degrees">26</h3>
+												<canvas height="32" width="32" id="cloudy"></canvas>
+												<h5>
+													10 <i>km/h</i>
+												</h5>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- end of weather widget -->
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 dashboard-layout" draggable="true"
+					ondragstart="drag(event)" id="snew-twitter" ondrop="drop(event)"
+					ondragover="allowDrop(event)">
+					<div class="chat-panel panel panel-default">
+						<div class="panel-heading">
+							<i class="fa fa-twitter fa-fw"></i> Twitter
+							<div class="btn-group pull-right ">
+								<i class="fa fa-expand fa-fw expandIcon"
+									onclick="javascript:expandWidgetBox('snew-twitter', true)"></i>
+								<i class="fa fa-compress fa-fw collapseIcon"
+									style="display: none" onclick="javascript:collapseWidgetBox()"></i>
+							</div>
+							<!-- <div class="btn-group pull-right">
+								<button type="button"
+									class="btn btn-default btn-xs dropdown-toggle"
+									data-toggle="dropdown">
+									<i class="fa fa-chevron-down"></i>
+								</button>
+								<ul class="dropdown-menu slidedown">
+									<li><a href="#"> <i class="fa fa-refresh fa-fw"></i>
+											Refresh
+									</a></li>
+									<li><a href="#"> <i class="fa fa-check-circle fa-fw"></i>
+											Available
+									</a></li>
+									<li><a href="#"> <i class="fa fa-times fa-fw"></i>
+											Busy
+									</a></li>
+									<li><a href="#"> <i class="fa fa-clock-o fa-fw"></i>
+											Away
+									</a></li>
+									<li class="divider"></li>
+									<li><a href="#"> <i class="fa fa-sign-out fa-fw"></i>
+											Sign Out
+									</a></li>
+								</ul>
+							</div> -->
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<ul class="chat" id="snew-twitter-tweetbox">
+
+								<li class="left clearfix"><span class="chat-img pull-left">
+										<img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<strong class="primary-font">Jack Sparrow</strong> <small
+												class="pull-right text-muted"> <i
+												class="fa fa-thumbs-up fa-fw"></i>12
+											</small> <small class="pull-right text-muted"
+												style="padding-right: 13px;"> <i
+												class="fa fa-clock-o fa-fw"></i> 12 mins ago
+											</small> <small class="pull-right text-muted"
+												style="padding-right: 13px;"> <i
+												class="fa fa-retweet fa-fw"></i> 12
+											</small>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+								<li class="right clearfix"><span
+									class="chat-img pull-right"> <img
+										src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<small class=" text-muted"> <i
+												class="fa fa-thumbs-up fa-fw"></i>12
+											</small> <small class=" text-muted" style="padding-right: 13px;">
+												<i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+											</small> <small class=" text-muted" style="padding-right: 13px;">
+												<i class="fa fa-retweet fa-fw"></i> 12
+											</small> <strong class="pull-right primary-font">Bhaumik
+												Patel</strong>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+
+								<li class="left clearfix"><span class="chat-img pull-left">
+										<img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<strong class="primary-font">Jack Sparrow</strong> <small
+												class="pull-right text-muted"> <i
+												class="fa fa-clock-o fa-fw"></i> 12 mins ago
+											</small>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+								<li class="right clearfix"><span
+									class="chat-img pull-right"> <img
+										src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<small class=" text-muted"> <i
+												class="fa fa-clock-o fa-fw"></i> 13 mins ago
+											</small> <strong class="pull-right primary-font">Bhaumik
+												Patel</strong>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+								<li class="left clearfix"><span class="chat-img pull-left">
+										<img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<strong class="primary-font">Jack Sparrow</strong> <small
+												class="pull-right text-muted"> <i
+												class="fa fa-clock-o fa-fw"></i> 14 mins ago
+											</small>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+								<li class="right clearfix"><span
+									class="chat-img pull-right"> <img
+										src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<small class=" text-muted"> <i
+												class="fa fa-clock-o fa-fw"></i> 15 mins ago
+											</small> <strong class="pull-right primary-font">Bhaumik
+												Patel</strong>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+								<li class="left clearfix"><span class="chat-img pull-left">
+										<img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<strong class="primary-font">Jack Sparrow</strong> <small
+												class="pull-right text-muted"> <i
+												class="fa fa-clock-o fa-fw"></i> 14 mins ago
+											</small>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+								<li class="right clearfix"><span
+									class="chat-img pull-right"> <img
+										src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+										class="img-circle" />
+								</span>
+									<div class="chat-body clearfix">
+										<div class="header">
+											<small class=" text-muted"> <i
+												class="fa fa-clock-o fa-fw"></i> 15 mins ago
+											</small> <strong class="pull-right primary-font">Bhaumik
+												Patel</strong>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur bibendum ornare dolor, quis ullamcorper
+											ligula sodales.</p>
+									</div></li>
+							</ul>
+						</div>
+						<!-- /.panel-body -->
+						<!-- /.panel-footer -->
+					</div>
+
+				</div>
+
+				<div class="dashboard-layout youtubeWidget col-lg-6"
+					draggable="true" ondragstart="drag(event)" id="snew-youtube"
+					ondrop="drop(event)" ondragover="allowDrop(event)"
+					style="display: block;">
+					<div class="chat-panel panel panel-default">
+						<div class="panel-heading">
+							<i class="fa fa-youtube fa-fw"></i> Youtube
+							<div class="btn-group pull-right">
+								<i class="fa fa-expand fa-fw expandIcon"
+									onclick="javascript:expandWidgetBox('snew-youtube', true)"></i>
+								<i class="fa fa-compress fa-fw collapseIcon"
+									style="display: none" onclick="javascript:collapseWidgetBox()"></i>
+							</div>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body noMaxHeight" style="height: 130%;"
+							id="snew-youtube-panelBody">
+							<div class="row">
+								<a href="http://www.youtube.com/watch?v=k6mFF3VmVAs"
+									data-toggle="lightbox" data-gallery="youtubevideos"
+									class="col-sm-4"> <img
+									src="//i1.ytimg.com/vi/yP11r5n5RNg/mqdefault.jpg"
+									class="img-responsive">
+								</a> <a href="http://youtu.be/iQ4D273C7Ac" data-toggle="lightbox"
+									data-gallery="youtubevideos" class="col-sm-4"> <img
+									src="//i1.ytimg.com/vi/iQ4D273C7Ac/mqdefault.jpg"
+									class="img-responsive">
+								</a> <a href="//www.youtube.com/embed/b0jqPvpn3sY"
+									data-toggle="lightbox" data-gallery="youtubevideos"
+									class="col-sm-4"> <img
+									src="//i1.ytimg.com/vi/b0jqPvpn3sY/mqdefault.jpg"
+									class="img-responsive">
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="dashboard-layout googleSearchWidget col-lg-6"
+					draggable="true" ondragstart="drag(event)" id="snew-google-search"
+					ondrop="drop(event)" ondragover="allowDrop(event)"
+					style="display: block;">
+					<div class="chat-panel panel panel-default">
+						<div class="panel-heading">
+							<i class="fa fa-google fa-fw"></i> Google Search
+
+							<div class="btn-group pull-right ">
+								<i class="fa fa-expand fa-fw expandIcon"
+									onclick="javascript:expandWidgetBox('snew-google-search', true)"></i>
+								<i class="fa fa-compress fa-fw collapseIcon"
+									style="display: none" onclick="javascript:collapseWidgetBox()"></i>
+							</div>
+							<span class="label label-info pull-right"
+								style="margin-top: 5px; margin-right: 25px; margin-left: 5px; margin-bottom: 3px;">
+								Total count: <span id="snew-google-search-total">1000000</span>
+							</span> <small class=" text-muted pull-right" style="margin-top: 3px;"><i
+								class="fa fa-search fa-fw "></i> <span style="padding-left: 3px"
+								id="snew-google-search-string"> JDA Focus </span> </small>
+
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body noMaxHeight" style="height: 130%;"
+							id="snew-google-search-panelBody">
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover"
+									id="snew-google-search-grid">
+									<thead>
+										<tr>
+											<th>URL</th>
+										</tr>
+									</thead>
+									<tbody id="snew-google-search-grid-tbody">
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+										<tr>
+											<td>www.google.com</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-6 dashboard-layout" draggable="true"
+					ondragstart="drag(event)" name="section-2" id="nashvilledotcom"
+					ondrop="drop(event)" ondragover="allowDrop(event)">
+					<div class="panel panel-default" id="nashvilledotcom-header">
+						<div class="panel-heading">
+							<i class="fa fa-calendar fa-fw"></i> Events from Nashville.com
+							<div class="btn-group pull-right">
+								<i class="fa fa-expand fa-fw expandIcon"
+									onclick="javascript:expandWidgetBox('nashvilledotcom', false)"></i>
+								<i class="fa fa-compress fa-fw collapseIcon"
+									style="display: none" onclick="javascript:collapseWidgetBox()"></i>
+							</div>
+							<div class="pull-right">
+								<div class="btn-group" role="group" aria-label="...">
+									<button type="button" id="nashvilledotcom-bargraph-btn"
+										name="nashvilledotcom-header-buttons"
+										class="btn btn-default btn-xs">Bar</button>
+									<button type="button" id="nashvilledotcom-piegraph-btn"
+										name="nashvilledotcom-header-buttons"
+										class="btn btn-default btn-xs">Pie</button>
+									<button type="button" id="nashvilledotcom-grid-div-btn"
+										name="nashvilledotcom-header-buttons"
+										class="btn btn-default btn-xs">Grid</button>
+								</div>
+
+							</div>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body" name="nashvilledotcom-component"
+							id="nashvilledotcom-bargraph"></div>
+						<div class="panel-body" name="nashvilledotcom-component"
+							id="nashvilledotcom-piegraph" style="display: none"></div>
+						<div class="panel-body" name="nashvilledotcom-component"
+							id="nashvilledotcom-grid-div"
+							style="display: none; overflow: auto;">
+
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover"
+									id="nashvilledotcom-grid">
+									<thead>
+										<tr>
+											<th>Event</th>
+											<th>Place</th>
+											<th>Date</th>
+											<!-- <th>To time</th> -->
+											<th>Description</th>
+											<!-- <th>Category</th> -->
+										</tr>
+									</thead>
+									<tbody id="nashvilledotcom-grid-tbody">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="js/jquery/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="css/metisMenu/dist/metisMenu.min.js"></script>
+
+	<!-- Material Charts JavaScript -->
+	<script src="js/material-charts/material-charts.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/app/sb-admin-2.js"></script>
+	<script src="js/app/widgets.js"></script>
+	<script src="js/skycons/skycons.min.js"></script>
+	<!-- DataTables JavaScript -->
+	<script src="css/datatables/media/js/jquery.dataTables.min.js"></script>
+	<script src="js/lightbox/ekko-lightbox.min.js"></script>
+
+	<script
+		src="css/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+	<script>
+		function refreshPage() {
+			location.reload();
+		}
+		setTimeout(refreshPage, 600000);
+
+		var icons = new Skycons({
+			"color" : "#73879C"
+		}), list = [ "clear-day", "clear-night", "partly-cloudy-day",
+				"partly-cloudy-night", "cloudy", "rain", "sleet", "snow",
+				"wind", "fog" ], i;
+
+		for (i = list.length; i--;)
+			icons.set(list[i], list[i]);
+
+		icons.play();
+
+		//Events widget
+		$(document)
+				.ready(
+						function() {
+
+							//weather widget initialization		
+							var nashVilleWeather = new snewWeather.create(
+									"nashville-weather");
+							nashVilleWeather.initialize();
+
+							//twitter widget initialization
+							var snewTwitterObject = new snewTwitter.create(
+									"snew-twitter");
+							snewTwitterObject.initialize();
+
+							//twitter widget initialization
+							var nashvilledotcomObject = new snewEvents.create(
+									"nashvilledotcom",
+									"api/events/nashvilledotcom",
+									"Nashville.com");
+							nashvilledotcomObject.initialize();
+							var nashvillelifestylesdotcomObject = new snewEvents.create(
+									"nashvillelifestylesdotcom",
+									"api/events/nashvillelifestyledotcom",
+									"NashvilleLifestyles.com");
+							nashvillelifestylesdotcomObject.initialize();
+
+							var snewYoutubeObject = new snewYoutube.create(
+									"snew-youtube");
+							snewYoutubeObject.initialize();
+
+							var snewGoogleSearchObject = new snewGoogleSearch.create(
+									"snew-google-search");
+							snewGoogleSearchObject.initialize();
+
+						});
+
+		//customizable dashboard
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			if (ev.target.className.indexOf("dashboard-layout") > -1) {
+				ev.dataTransfer.setData("dashboardLayoutCompId", ev.target.id);
+			}
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var draggedCompId = ev.dataTransfer
+					.getData("dashboardLayoutCompId");
+			var targetObjId = getParentDashboardLayoutComp(ev.target);
+			if (targetObjId) {
+				$("#" + draggedCompId).insertBefore($("#" + targetObjId));
+			}
+			//ev.target.appendChild(document.getElementById(data));
+		}
+
+		function getParentDashboardLayoutComp(targetObj) {
+			while ((targetObj != null) && (targetObj.parentNode != null)) {
+				if (targetObj.className.indexOf("dashboard-layout") > -1) {
+					return targetObj.id;
+				} else {
+					targetObj = targetObj.parentNode;
+				}
+			}
+			return null;
+		}
+
+		function expandWidgetBox(targetWidgetBox, setFullHeight) {
+			$(".dashboard-layout").hide();
+			$(".expandIcon").hide();
+			$(".collapseIcon").show();
+			$("#" + targetWidgetBox).show();
+			$("#" + targetWidgetBox).removeClass("col-lg-6").addClass(
+					"col-lg-12");
+			$("#" + targetWidgetBox + " .panel-body").addClass("noMaxHeight");
+			if (setFullHeight) {
+				$("#" + targetWidgetBox + " .panel-body").height('100%');
+			}
+		}
+
+		function collapseWidgetBox() {
+			$(".dashboard-layout").removeClass("col-lg-12").addClass("col-lg-6");
+			$(".dashboard-layout").show();
+			$(".expandIcon").show();
+			$(".collapseIcon").hide();
+		}
+		// delegate calls to data-toggle="lightbox"
+		$(document)
+				.delegate(
+						'*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])',
+						'click',
+						function(event) {
+							event.preventDefault();
+							return $(this)
+									.ekkoLightbox(
+											{
+												onShown : function() {
+													if (window.console) {
+														return console
+																.log('onShown event fired');
+													}
+												},
+												onContentLoaded : function() {
+													if (window.console) {
+														return console
+																.log('onContentLoaded event fired');
+													}
+												},
+												onNavigate : function(
+														direction, itemIndex) {
+													if (window.console) {
+														return console
+																.log('Navigating '
+																		+ direction
+																		+ '. Current item: '
+																		+ itemIndex);
+													}
+												}
+											});
+						});
+		$('[data-toggle="lightbox"]').tooltip();
+	</script>
+</body>
+
+</html>

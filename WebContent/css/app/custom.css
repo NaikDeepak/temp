@@ -1,0 +1,153 @@
+//Weather
+.panel_toolbox {
+  float: right;
+  min-width: 70px;
+}
+.panel_toolbox>li {
+  float: left;
+}
+.panel_toolbox>li>a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px;
+}
+.panel_toolbox>li>a:hover {
+  background: #F5F7FA;
+}
+.x_content canvas {}
+
+
+/* *********  custom accordion  **************************** */
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.x_panel {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  opacity: 1;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+}
+.x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+  margin-bottom: 10px;
+}
+.x_title .filter {
+  width: 40%;
+  float: right;
+}
+.x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.x_title h2 small {
+  margin-left: 10px;
+}
+.x_title span {
+  color: #BDBDBD;
+}
+.x_content {
+  padding: 0 5px 6px;
+  position: relative;
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+}
+.x_content h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+
+h3.degrees {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.degrees:after {
+  content: "o";
+  position: relative;
+  top: -12px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.daily-weather .day {
+  font-size: 14px;
+  border-top: 2px solid rgba(115, 135, 156, 0.36);
+  text-align: center;
+  border-bottom: 2px solid rgba(115, 135, 156, 0.36);
+  padding: 5px 0;
+}
+.weather-days .col-sm-2 {
+  overflow: hidden;
+  width: 16.66666667%;
+}
+.weather .row {
+  margin-bottom: 0
+}
+.daily-weather canvas {
+	padding-left: 20px;
+}
+
+/*Twitter*/
+.chat-body p {
+	margin-top:15px !important;
+	margin-bottom:10px !important;
+}
+
+/* Material Charts */
+.material-charts-blue {
+    background-color: #1BBDE7 !important;
+}
+
+#nashvilledotcom-grid-div {
+	max-height: 417px;
+}
+
+.noMaxHeight {
+	max-height: none !important;
+}
+#nashvilledotcom .table-responsive {
+	overflow-x : hidden !important;
+}
+#snew-twitter .panel-body {
+	height : 415px;
+}
+.panel-body {
+	max-height: 415px !important;
+}
+.expandIcon, .collapseIcon {
+	margin-left: 4px;
+	cursor: pointer;
+}
+.youtubeWidget .panel-body {
+	height: 450px !important;
+}
+.youtubeWidget  img {
+	width: 200px;
+}
+.youtubeWidget .noMaxHeight img {
+	width: 300px;
+}
